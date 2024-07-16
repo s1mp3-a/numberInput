@@ -7,13 +7,21 @@
 
 <body>
   <div>
+    <span>Для ввода используйте стрелки клавиатуры. Или кнопки рядом со слайдером</span>
+  </div>
+  <div class="container">
     <div id="phone-code"></div>
-    <div id="phone-number">
-      <input type="range" min="0" max="9999999999"></input>
-      <input type="button" value="↺"></input>
-      <input type="button" value="↻"></input>
+    <div>
+      <input id="phone-number" onmousedown="return false" type="range" min="0" max="9999999999"></input>
+      <input id="rotate-anti-clockwise" type="button" value="↺"></input>
+      <input id="rotate-clockwise" type="button" value="↻"></input>
     </div>
   </div>
+  <div>
+    <span>Номер: +7 </span>
+    <span id="phone-number-value"></span>
+  </div>
 </body>
-
+<script src="rotate.js"></script>
+<script src="./ball.js"></script>
 </html>
